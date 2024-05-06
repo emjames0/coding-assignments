@@ -14,6 +14,7 @@ p {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     text-align: center;
     flex-wrap: wrap;
+    line-height: 0;
 }
 
 h1 {
@@ -102,6 +103,7 @@ table {
     color: white;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     font-style: italic;
+    text-align: left;
 }
 
 /* Brief code to center the form */
