@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Candy Store for Carnivores</title>
+    <link rel="stylesheet" href="styles.css"
 </head>
 <body>
     <a href="index.html"> Home </a>
@@ -11,36 +12,49 @@
     <a href="news.html">News & Updates</a>
     
 <h1>Most pressing news and meat updates across the United States</h1>
-<h3>I don't know enough about global meats to include world news here.</h3>
-<h5>Maybe someday I'll have more knowledge on the global meat situation.</h5>
+<h3><i>I don't know enough about global meats to include world news here.</i></h3>
+<marquee><h5>Maybe someday I'll have more knowledge on the global meat situation.</h5></marquee>
 
-<ol>
-    <li>
-        <a href="https://www.kcra.com/article/us-davis-growing-meat-alternative/60608259"> Click Me</a> to find out how US Davis is growing cells to create a meat alternative.
-    </li>
-    <li>
-        <a href="https://www.nytimes.com/2024/04/24/climate/wu-tang-clan-rza-vegan.html">Here</a> is where you can learn about RZA of the Wu-Tang Clan's "beef" with meat.
-    </li>
-    <li>
-        <a href="https://www.marthastewart.com/deli-meat-recall-april-2024-8639467">Martha Stewart</a> warns folks about the recall on deli meat.
-    </li>
-</ol>
+<section>
+    <div>
+    <ol>
+        <li>
+        <a href="https://www.kcra.com/article/us-davis-growing-meat-alternative/60608259"> Click Me</a>to find out how US Davis is growing cells to create a meat alternative.
+        </li>
+        <li>
+        <a href="https://www.nytimes.com/2024/04/24/climate/wu-tang-clan-rza-vegan.html">Here</a>is where you can learn about RZA of the Wu-Tang Clan's "beef" with meat.
+        </li>
+        <li>
+        <a href="https://www.marthastewart.com/deli-meat-recall-april-2024-8639467">Martha Stewart</a>warns folks about the recall on deli meat.
+        </li>
+    </ol>
+    </div>
+</section>
 <br>
+
+<section>
 <h2>Do you care about meat and want to support meat?</h2>
-<p>Check out our steps below on the best way to be supportive.</p>
-<ul>
-    <li>    Purchase meat. </li>
-    <li>Do that little "mmmm" sound when eating meats. </li>
-    <li>  Expand your palette by indulging different types of meat.</li>
-    <li>  Join the Meat Newsletter below!</li>
-</ul>
-<br><br>
-<form>
-    <input type="text" name="firstName" placeholder="First Name"><br>
-    <input type="text" name="lastName" placeholder="Last Name"><br>
-    <input type="text" name="emailAddress" placeholder="Email Address"><br>
-    <input type="radio" name="agree" value="agree"> Click to agree to our terms of service. <br><br>
-    <input type="submit" value="Submit">
-</form>
+    <p>Check out our steps below on the best way to be supportive.</p>
+    <div class="unordered-list">
+        <ul>
+            <li>Purchase meat. </li>
+            <li>Do that little "mmmm" sound when eating meats. </li>
+            <li>Expand your palette by indulging different types of meat.</li>
+            <li>Join the Meat Newsletter below!</li>
+        </ul>
+    </div>
+</section>
+
+<section>
+    <form id="form">
+        <input type="text" name="firstName" placeholder="First Name"><br>
+        <input type="text" name="lastName" placeholder="Last Name"><br>
+        <input type="text" name="emailAddress" placeholder="Email Address"><br><br>
+        <input type="radio" name="agree" value="agree"> Click to agree to our terms of service. <br>
+            <p id="closing">(hint) there are none.</p>
+        <input type="submit" value="Submit">
+    </form>
+</section>
+
 </body>
 </html>

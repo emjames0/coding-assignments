@@ -1,0 +1,116 @@
+/* Below are the main page element styles, generalized for all pages and relevant elements. Some items include fonts, sizes, colors, alignments, etc. */
+body {
+    background-image: radial-gradient(#ffffff, #7c2ae8, #2e1254);
+}
+
+a {
+    color: white;
+    padding: 20px;
+}
+
+p {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-align: center;
+    flex-wrap: wrap;
+}
+
+h1 {
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #ffffff;
+    text-align: center;
+}
+
+h2 {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-align: center;
+}
+
+h3 {
+    border: 10px dotted black;
+    text-align: center;
+    color: yellow;
+    padding: 20px;
+    margin-left: 150px;
+    margin-right: 150px;
+}
+
+h5 {
+    color: aqua;
+}
+
+ol {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-align: center;
+    list-style-position: inside;
+}
+
+/* This is code for the home page image to be centered with rounded corners and box-shadow */
+.main-image {
+    border-radius: 25px;
+    box-shadow: 10px 5px 5px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* This CSS controls table header and table data to give the rows a bottom and center the text */
+th, td {
+    padding: 15px;
+    text-align: center;
+    border-bottom: 1px solid black;
+}
+
+/* Below allows the table row colors to change when a user hovers */
+tr:hover {
+    background-color: lightgray;
+}
+/* This the rest of the table style - backgrounds, borders, and to center. */
+table {
+    margin-left: auto;
+    margin-right: auto;
+    border-collapse: collapse;
+    background-color: white;
+    border-radius: 10px;
+}
+
+/* Rounded edges, centered images and spacing between each */
+.meat-images {
+    border-radius: 5px;
+    box-shadow: 2px 2px 2px 2px;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin-right: 10px ;
+}
+
+/* Trying to center the text while also centering the bullets */
+#news-links {
+    padding: 10px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 14px;
+}
+
+/*Probably the hardest I worked to get this right - centered, background to highlight this list */
+.unordered-list {
+    max-width: 500px;
+    margin: 5rem auto;
+    background-color: #2e1254;
+    padding: 1rem 2rem;
+    border-radius: 1rem;
+    color: white;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-style: italic;
+}
+
+/* Brief code to center the form */
+#form {
+    padding: 2px;
+    text-align: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/*I just wanted to offset some of this text and center it */
+#closing {
+    font-style: italic;
+    font-weight: 900;
+    color: gold;
+}
