@@ -26,7 +26,8 @@ h2 {
 }
 
 h3 {
-    border: 10px dotted black;
+    border: 8px dashed #2e1254;
+    border-radius: 20px;
     text-align: center;
     color: yellow;
     padding: 20px;
