@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Week 11 Assignment: Tic-Tac-Toe</title>
+<!-- Custom Styling Goes Here -->    
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.css">
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/js/bootstrap.bundle.js">
+</head>
+<body>
+
+<!-- Below is the div container that holds the table(board) used to place X's and O's -->
+<div class="container">
+    <h1>Tic-Tac-Toe Bro</h1>
+    <div class="turn"> It's X's Turn</div>
+    <table class="board">
+        <tr>
+            <td data-cell="0"></td>
+            <td data-cell="1"></td>
+            <td data cell="2"></td>
+        </tr>
+        <tr>
+            <td data-cell="3"></td>
+            <td data-cell="4"></td>
+            <td data-cell="5"></td>
+        </tr>
+        <tr>
+            <td data-cell="6"></td>
+            <td data-cell="7"></td>
+            <td data-cell="8"></td>
+        </tr>
+    </table>
+<!-- Below is the button to restart and/or clear the game -->
+    <button id="restartBtn" class="btn btn-primary">Restart The Game</button>
+    <div id="result" class="alert alert-success" style="display: none;"></div>
+</div>
+
+
+
+<!-- Scripts Go Down Here -->
+<script src="node_modules/jquery/dist/jquery.js"></script>
+<script src="code.js"></script>
+
+</body>
+</html>

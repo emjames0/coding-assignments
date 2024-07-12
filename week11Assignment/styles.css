@@ -1,0 +1,95 @@
+/* Below is custom styling for the body of the document */
+
+body {
+    background: #f0f2f5;
+    font-family: 'Georgia';
+}
+
+/* Below is custom styling for the div container that holds the tic-tac-toe board */
+.container {
+    max-width: 600px;
+    margin: 50px auto;
+    background-color: #ffffff;
+    border-radius: 15px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    padding: 30px;
+}
+
+/* Below is custom styling for the board's header*/
+h1 {
+    text-align: center;
+    font-weight: bold;
+    color: #4a90e2;
+    margin-bottom: 20px;
+}
+
+/* Below is custom styling for the overall tic-tac-toe board */
+.board {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+}
+
+/* Below is custom styling for the inside of the tic-tac-toe board */
+.board td {
+    width: 100px;
+    height: 100px;
+    text-align: center;
+    font-size: 3em;
+    border: 3px solid #e0e0e0;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+}
+
+/* Below are additional custom styling for interacting with the tic-tac-toe board */
+.board td:before {
+    content: '';
+    display: block;
+    padding-top: 100%; 
+}
+
+.board td:hover {
+    background-color: #f5f5f5;
+    transform: scale(1.05);
+}
+
+.board td:active {
+    background-color: #d3d3d3;
+}
+
+/* Below is the styling for the heading that display who's turn it is */
+.turn {
+    text-align: center;
+    font-size: 1.5em;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+/* Below is custom styling for the restart button */
+#restartBtn {
+    display: block;
+    margin: 0 auto;
+    margin-top: 20px;
+    background-color: #4a90e2;
+    border-color: #4a90e2;
+    font-size: 1.2em;
+    padding: 10px 20px;
+    border-radius: 5px;
+    color: white;
+    transition: background-color 0.3s ease;
+}
+
+#restartBtn:hover {
+    background-color: #357abd;
+}
+
+/* Below is custom styling for the result text */
+#result {
+    text-align: center;
+    margin-top: 20px;
+    display: none;
+    font-size: 1.5em;
+    color: #28a745;
+}
