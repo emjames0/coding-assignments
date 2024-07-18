@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TrakRun</title>
+    <!-- Custom Styling Goes Here --> 
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<!--Below is the div class that will hold the form and all the data needed -->
+    <div class="container">
+        <h1 class="mt-5">Trak Run</h1>
+        <div id="run-form" class="mt-4">
+            <h2>Add New Run</h2>
+            <form id="addRunForm">
+<!-- Below is a hidden way of recording runIDs so that it can be edited after submission -->
+            <input type="hidden" id="runId">
+                <div class="form-group">
+                    <label for="date">Date</label>
+                    <input type="date" class="form-control" id="date" required>
+                </div>
+                <div class="form-group">
+                    <label for="distance">Distance (km)</label>
+                    <input type="number" step="0.01" class="form-control" id="distance" required>
+                </div>
+                <div class="form-group">
+                    <label for="time">Time (minutes)</label>
+                    <input type="number" class="form-control" id="time" required>
+                </div>
+                <div class="form-group">
+                    <label for="pace">Pace (min/km)</label>
+                    <input type="number" step="0.01" class="form-control" id="pace" required>
+                </div>
+                <div class="form-group">
+                    <label for="heartBpm">Heart BPM</label>
+                    <input type="number" class="form-control" id="heartBpm" required>
+                </div>
+                <div class="form-group">
+                    <label for="intensity">Intensity</label>
+                    <select class="form-control" id="intensity" required>
+                        <option value="Low">Low</option>
+                        <option value="Moderate">Moderate</option>
+                        <option value="High">High</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="weather">Weather Conditions</label>
+                    <input type="text" class="form-control" id="weather">
+                </div>
+                <div class="form-group">
+                    <label for="mood">Mood</label>
+                    <input type="text" class="form-control" id="mood">
+                </div>
+                <div class="form-group">
+                    <label for="notes">Notes</label>
+                    <textarea class="form-control" id="notes"></textarea>
+                </div>
+<!-- Below is the button to submit the run and its data -->
+                <button type="submit" class="btn btn-info">Add Run</button>
+            </form>
+        </div>
+<!-- Below is the list of previous runs and their data -->
+        <div id="run-list" class="mt-5">
+            <h2>Run History</h2>
+            <ul class="list-group"></ul>
+        </div>
+    </div>
+
+    <!-- Custom Scripts Go Here --> 
+    <script src="node_modules/jquery/dist/jquery.js"></script>
+    <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
+    <script src="code.js"></script> 
+    
+</body>
+</html>
