@@ -1,25 +1,22 @@
-import logo from './logo.svg';
+//below is the import for react to use its features
+import React from 'react';
+//below is the import of the app's CSS file 
 import './App.css';
+//below imports the navigation component
+import Navigation from './Navigation';
+//below imports the login form
+import LoginForm from './LoginForm';
 
+//below is the root component of the overall application, containing the navigation and the loginform 
+//additional components to the app would be linked/listed here 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Navigation />
+      <LoginForm />
     </div>
   );
 }
 
+//below allows the app component to be used as the main component in the application 
 export default App;
