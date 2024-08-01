@@ -1,10 +1,11 @@
 import React, { useState } from 'react';
 
+//defines the Stars component and recieves a rating as a prop
 const Stars = ({ rating }) => {
   const [currentRating, setCurrentRating] = useState(rating);
 
   const handleRating = (newRating) => {
-    setCurrentRating(newRating);
+    setCurrentRating(newRating); //updates the current rating state
   };
 
   return (
@@ -22,4 +23,5 @@ const Stars = ({ rating }) => {
   );
 };
 
+//exports Stars as the default
 export default Stars;
