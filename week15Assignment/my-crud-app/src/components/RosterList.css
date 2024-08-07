@@ -1,0 +1,74 @@
+.roster-list {
+    margin: 0 auto;
+    max-width: 800px;
+    padding: 20px;
+    background-color: black; /* Background color for the container */
+    color: white; /* Default text color for readability */
+  }
+  
+  h2 {
+    color: #FFB819; /* YVC gold color */
+    font-size: 2em;
+    margin-bottom: 20px;
+  }
+  
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+  }
+  
+  th, td {
+    border: 1px solid #FFB819; /* YVC gold color for borders */
+    padding: 10px;
+    text-align: left;
+  }
+  
+  th {
+    background-color: #A93439; /* YVC red color */
+    color: white;
+    font-size: 1.2em;
+  }
+  
+  tr:nth-child(even) {
+    background-color: #333; /* Dark grey for alternating rows */
+  }
+  
+  tr:nth-child(odd) {
+    background-color: #444; /* Slightly lighter dark grey for odd rows */
+  }
+  
+  tr:hover {
+    background-color: #555; /* Medium grey for hover effect */
+  }
+  
+  button {
+    background-color: #A93439; /* YVC red color */
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 4px;
+    font-size: 0.9em;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  button:hover {
+    background-color: #8a2c2b; /* Darker red for hover */
+  }
+  
+  button.edit {
+    background-color: #FFB819; /* YVC gold color for edit */
+  }
+  
+  button.edit:hover {
+    background-color: #e6a51d; /* Darker gold for hover */
+  }
+  
+  button.delete {
+    background-color: #dc3545; /* Red color for delete */
+  }
+  
+  button.delete:hover {
+    background-color: #c82333; /* Darker red for hover */
+  }

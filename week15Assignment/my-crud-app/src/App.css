@@ -1,0 +1,108 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: black;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .App {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    background: black;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  h1 {
+    text-align: center;
+    color: #FFB819; 
+    font-size: 2.5em;
+    margin-bottom: 20px;
+  }
+  
+  h2 {
+    color: #A93439;
+    margin-bottom: 10px;
+  }
+  
+  form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-bottom: 20px;
+  }
+  
+  input {
+    padding: 10px;
+    border: 2px solid #ddd;
+    border-radius: 4px;
+    font-size: 1em;
+    transition: border-color 0.3s ease;
+  }
+  
+  input:focus {
+    border-color: #A93439; 
+    outline: none;
+  }
+  
+  button {
+    background-color: #A93439; 
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 4px;
+    font-size: 1em;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  button:hover {
+    background-color: #1a5d1a; 
+  }
+  
+  button:disabled {
+    background-color: #aaa;
+    cursor: not-allowed;
+  }
+  
+  ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  li {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: #fff;
+    padding: 15px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    margin-bottom: 10px;
+  }
+  
+  span {
+    font-size: 1.2em;
+  }
+  
+  button {
+    background-color: #A93439;
+    color: white;
+  }
+  
+  button.edit {
+    background-color: #007bff; 
+  }
+  
+  button.edit:hover {
+    background-color: #0056b3; 
+  }
+  
+  button.delete {
+    background-color: #dc3545; 
+  }
+  
+  button.delete:hover {
+    background-color: #c82333;
+  } 
