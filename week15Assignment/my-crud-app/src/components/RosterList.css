@@ -2,12 +2,12 @@
     margin: 0 auto;
     max-width: 800px;
     padding: 20px;
-    background-color: black; /* Background color for the container */
-    color: white; /* Default text color for readability */
+    background-color: black; 
+    color: white; 
   }
   
   h2 {
-    color: #FFB819; /* YVC gold color */
+    color: #FFB819; 
     font-size: 2em;
     margin-bottom: 20px;
   }
@@ -19,31 +19,31 @@
   }
   
   th, td {
-    border: 1px solid #FFB819; /* YVC gold color for borders */
+    border: 1px solid #FFB819; 
     padding: 10px;
     text-align: left;
   }
   
   th {
-    background-color: #A93439; /* YVC red color */
+    background-color: #A93439; 
     color: white;
     font-size: 1.2em;
   }
   
   tr:nth-child(even) {
-    background-color: #333; /* Dark grey for alternating rows */
+    background-color: #333; 
   }
   
   tr:nth-child(odd) {
-    background-color: #444; /* Slightly lighter dark grey for odd rows */
+    background-color: #444; 
   }
   
   tr:hover {
-    background-color: #555; /* Medium grey for hover effect */
+    background-color: #555; 
   }
   
   button {
-    background-color: #A93439; /* YVC red color */
+    background-color: #A93439; 
     color: white;
     border: none;
     padding: 5px 10px;
@@ -54,21 +54,21 @@
   }
   
   button:hover {
-    background-color: #8a2c2b; /* Darker red for hover */
+    background-color: #8a2c2b; 
   }
   
   button.edit {
-    background-color: #FFB819; /* YVC gold color for edit */
+    background-color: #FFB819; 
   }
   
   button.edit:hover {
-    background-color: #e6a51d; /* Darker gold for hover */
+    background-color: #e6a51d; 
   }
   
   button.delete {
-    background-color: #dc3545; /* Red color for delete */
+    background-color: #dc3545; 
   }
   
   button.delete:hover {
-    background-color: #c82333; /* Darker red for hover */
+    background-color: #c82333; 
   }
