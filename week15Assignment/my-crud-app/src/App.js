@@ -1,17 +1,20 @@
 import React, { useState, useEffect } from 'react';
+//imports the RosterList component
 import RosterList from './components/RosterList';
+//imports the MemberForm compononet
 import MemberForm from './components/MemberForm';
-import './App.css'; // Assuming you have some basic styling
+//imports the overall app's styling
+import './App.css'; 
 
 const API_URL = 'https://66b3ee979f9169621ea16d29.mockapi.io/member';
 
 const App = () => {
-  // State to hold the list of team members
+// below is the state to hold the list of team members
   const [members, setMembers] = useState([]);
-  // State to handle the form input
+// below is the state to handle the form input
   const [currentMember, setCurrentMember] = useState(null);
 
-  // Fetch members from the API
+// below fetches members from the API
   useEffect(() => {
     const fetchMembers = async () => {
       try {
@@ -26,11 +29,11 @@ const App = () => {
     fetchMembers();
   }, []);
 
-  // Add or update a member
+// Below adds or updates the members
   const handleSave = async (member) => {
     try {
       if (member.id) {
-        // Update existing member
+// below update existing member
         await fetch(`${API_URL}/${member.id}`, {
           method: 'PUT',
           headers: { 'Content-Type': 'application/json' },
@@ -38,7 +41,7 @@ const App = () => {
         });
         setMembers(members.map(m => (m.id === member.id ? member : m)));
       } else {
-        // Add new member
+// below adds a new member
         const response = await fetch(API_URL, {
           method: 'POST',
           headers: { 'Content-Type': 'application/json' },
@@ -47,13 +50,13 @@ const App = () => {
         const newMember = await response.json();
         setMembers([...members, newMember]);
       }
-      setCurrentMember(null); // Clear form
+      setCurrentMember(null); 
     } catch (error) {
       console.error('Error saving member:', error);
     }
   };
 
-  // Delete a member
+//below deletes a member from the API
   const handleDelete = async (id) => {
     try {
       await fetch(`${API_URL}/${id}`, {

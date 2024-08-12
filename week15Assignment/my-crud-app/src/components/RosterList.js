@@ -1,6 +1,8 @@
 import React from 'react';
+//below imports the RosterList component 
 import './RosterList.css'; 
 
+//below is the component to display a list of team members 
 const RosterList = ({ members, onEdit, onDelete }) => {
   return (
     <div className="roster-list">
